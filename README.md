@@ -45,9 +45,23 @@ YourApp/
 └── [other application files]
 ```
 
+## Version Data Structure
+
+### Local Version (`version.txt`)
+```
+1.0.1
+```
+
+### Remote Version (from URL)
+The program will fetch the version number from the configured URL (e.g., `https://example.com/version.txt`). The remote file should contain only the version number:
+```
+1.0.2
+```
+
 ## Notes
 
 - `version.txt` must contain a valid version number (e.g., `1.0.1`)
 - `update.zip` must contain files to update with the same directory structure as the target
 - Files listed in `ignore.txt` will be preserved during updates
-- Make sure the URLs are accessible and the remote `version.txt` contains a valid version number 
+- Make sure the URLs are accessible and the remote `version.txt` contains a valid version number
+- Version numbers should follow semantic versioning (e.g., `major.minor.patch`) 
