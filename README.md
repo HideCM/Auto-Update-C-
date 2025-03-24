@@ -1,38 +1,53 @@
 # Auto Update Tool
 
-Công cụ tự động cập nhật cho ứng dụng Windows, được viết bằng C#.
+A Windows console application written in C# for automatic software updates.
 
-## Cách sử dụng
+## Features
 
-1. Tạo file `version.txt` trong cùng thư mục với chương trình, chứa phiên bản hiện tại (ví dụ: `1.0.1`)
+- Check local version from `version.txt`
+- Check remote version from configurable URL
+- Compare versions using semantic versioning
+- Download and install updates from `update.zip`
+- Skip files/directories listed in `ignore.txt`
 
-2. Tạo file `ignore.txt` (tùy chọn) để liệt kê các file hoặc thư mục không muốn cập nhật:
+## Usage
+
+1. Create `version.txt` in the same directory as the program, containing the current version (e.g., `1.0.1`)
+
+2. Create `ignore.txt` (optional) to list files or directories to skip during updates:
 ```
 config.json
 userdata/
 ```
 
-3. Cấu hình URL trong file `Program.cs`:
-   - `remoteVersionUrl`: URL để kiểm tra phiên bản mới
-   - `updateUrl`: URL để tải file update.zip
+3. Configure URLs in `Program.cs`:
+   - `remoteVersionUrl`: URL to check for new version (e.g., `https://example.com/version.txt`)
+   - `updateUrl`: URL to download update.zip (e.g., `https://example.com/update.zip`)
 
-4. Chạy chương trình:
+   Example:
+   ```csharp
+   string remoteVersionUrl = "https://example.com/version.txt";
+   string updateUrl = "https://example.com/update.zip";
+   ```
+
+4. Run the program or start build:
 ```
 dotnet run
 ```
 
-## Cấu trúc thư mục mẫu
+## Directory Structure
 
 ```
 YourApp/
-├── Program.exe
+├── Update.exe
 ├── version.txt
 ├── ignore.txt
-└── [các file khác của ứng dụng]
+└── [other application files]
 ```
 
-## Lưu ý
+## Notes
 
-- File `version.txt` phải chứa một số phiên bản hợp lệ (ví dụ: `1.0.1`)
-- File `update.zip` phải chứa các file cần cập nhật với cấu trúc thư mục giống như thư mục đích
-- Các file trong `ignore.txt` sẽ được giữ nguyên khi cập nhật 
+- `version.txt` must contain a valid version number (e.g., `1.0.1`)
+- `update.zip` must contain files to update with the same directory structure as the target
+- Files listed in `ignore.txt` will be preserved during updates
+- Make sure the URLs are accessible and the remote `version.txt` contains a valid version number 
