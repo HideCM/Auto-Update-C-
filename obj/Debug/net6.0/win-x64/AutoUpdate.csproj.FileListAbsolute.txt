@@ -1,0 +1,14 @@
+D:\Coding\Auto Update\bin\Debug\net6.0\win-x64\AutoUpdate.exe
+D:\Coding\Auto Update\bin\Debug\net6.0\win-x64\AutoUpdate.deps.json
+D:\Coding\Auto Update\bin\Debug\net6.0\win-x64\AutoUpdate.runtimeconfig.json
+D:\Coding\Auto Update\bin\Debug\net6.0\win-x64\AutoUpdate.dll
+D:\Coding\Auto Update\bin\Debug\net6.0\win-x64\AutoUpdate.pdb
+D:\Coding\Auto Update\obj\Debug\net6.0\win-x64\AutoUpdate.GeneratedMSBuildEditorConfig.editorconfig
+D:\Coding\Auto Update\obj\Debug\net6.0\win-x64\AutoUpdate.AssemblyInfoInputs.cache
+D:\Coding\Auto Update\obj\Debug\net6.0\win-x64\AutoUpdate.AssemblyInfo.cs
+D:\Coding\Auto Update\obj\Debug\net6.0\win-x64\AutoUpdate.csproj.CoreCompileInputs.cache
+D:\Coding\Auto Update\obj\Debug\net6.0\win-x64\AutoUpdate.dll
+D:\Coding\Auto Update\obj\Debug\net6.0\win-x64\refint\AutoUpdate.dll
+D:\Coding\Auto Update\obj\Debug\net6.0\win-x64\AutoUpdate.pdb
+D:\Coding\Auto Update\obj\Debug\net6.0\win-x64\AutoUpdate.genruntimeconfig.cache
+D:\Coding\Auto Update\obj\Debug\net6.0\win-x64\ref\AutoUpdate.dll
